@@ -38,13 +38,13 @@
     margin: 20px auto;
     overflow: hidden;
 }
-#search-bar {
+#buscar-bar {
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-#search-bar input, #search-bar select {
+#buscar-bar input, #buscar-bar select {
     padding: 10px;
     margin: 5px;
     flex: 1;
@@ -52,7 +52,7 @@
     border-radius: 5px;
     transition: border-color 0.3s;
 }
-#search-bar input:focus, #search-bar select:focus {
+#buscar-bar input:focus, #buscar-bar select:focus {
     border-color: #1e90ff;
 }
 #carton-list {
@@ -135,4 +135,5 @@
 .remove-item:hover {
     background-color: #d32f2f;
 }
+
 
