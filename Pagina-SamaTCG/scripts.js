@@ -65,7 +65,7 @@ function clearCart() {
     ActCarrito();
 }
 
-function sortcarta(carta, criterion) {
+function filtrarcarta(carta, criterion) {
     switch (criterion) {
         case 'name-asc':
             return carta.sort((a, b) => a.name.localeCompare(b.name));
@@ -84,51 +84,51 @@ function sortcarta(carta, criterion) {
     }
 }
 
-function filtercarta(carta, search, minprecio, maxprecio) {
+function filtercarta(carta, buscar, minprecio, maxprecio) {
     return carta.filter(carton => {
-        return carton.name.toLowerCase().includes(search.toLowerCase()) &&
+        return carton.name.toLowerCase().includes(buscar.toLowerCase()) &&
                (minprecio ? carton.precio >= minprecio : true) &&
                (maxprecio ? carton.precio <= maxprecio : true);
     });
 }
 
-document.getElementById('search').addEventListener('input', () => {
-    const search = document.getElementById('search').value;
+document.getElementById('buscar').addEventListener('input', () => {
+    const buscar = document.getElementById('buscar').value;
     const minprecio = document.getElementById('precio-min').value;
     const maxprecio = document.getElementById('precio-max').value;
     const sortCriterion = document.getElementById('sort').value;
-    let filtrardacarta = filtercarta(carta, search, minprecio, maxprecio);
-    filtrardacarta = sortcarta(filtrardacarta, sortCriterion);
+    let filtrardacarta = filtercarta(carta, buscar, minprecio, maxprecio);
+    filtrardacarta = filtrarcarta(filtrardacarta, sortCriterion);
     displaycarta(filtrardacarta);
 });
 
 document.getElementById('sort').addEventListener('change', () => {
-    const search = document.getElementById('search').value;
+    const buscar = document.getElementById('buscar').value;
     const minprecio = document.getElementById('precio-min').value;
     const maxprecio = document.getElementById('precio-max').value;
     const sortCriterion = document.getElementById('sort').value;
-    let filtrardacarta = filtercarta(carta, search, minprecio, maxprecio);
-    filtrardacarta = sortcarta(filtrardacarta, sortCriterion);
+    let filtrardacarta = filtercarta(carta, buscar, minprecio, maxprecio);
+    filtrardacarta = filtrarcarta(filtrardacarta, sortCriterion);
     displaycarta(filtrardacarta);
 });
 
 document.getElementById('precio-min').addEventListener('input', () => {
-    const search = document.getElementById('search').value;
+    const buscar = document.getElementById('buscar').value;
     const minprecio = document.getElementById('precio-min').value;
     const maxprecio = document.getElementById('precio-max').value;
     const sortCriterion = document.getElementById('sort').value;
-    let filtrardacarta = filtercarta(carta, search, minprecio, maxprecio);
-    filtrardacarta = sortcarta(filtrardacarta, sortCriterion);
+    let filtrardacarta = filtercarta(carta, buscar, minprecio, maxprecio);
+    filtrardacarta = filtrarcarta(filtrardacarta, sortCriterion);
     displaycarta(filtrardacarta);
 });
 
 document.getElementById('precio-max').addEventListener('input', () => {
-    const search = document.getElementById('search').value;
+    const buscar = document.getElementById('buscar').value;
     const minprecio = document.getElementById('precio-min').value;
     const maxprecio = document.getElementById('precio-max').value;
     const sortCriterion = document.getElementById('sort').value;
-    let filtrardacarta = filtercarta(carta, search, minprecio, maxprecio);
-    filtrardacarta = sortcarta(filtrardacarta, sortCriterion);
+    let filtrardacarta = filtercarta(carta, buscar, minprecio, maxprecio);
+    filtrardacarta = filtrarcarta(filtrardacarta, sortCriterion);
     displaycarta(filtrardacarta);
 });
 
