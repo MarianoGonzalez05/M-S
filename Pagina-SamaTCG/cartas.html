@@ -11,7 +11,10 @@
     <header class="container-navbar heading-1">
         <h1>ZamaTCG</h1>
         <div id="cartoncontainer">
-            <button id="cartonbutton">Carrito (0)</button>
+            <button id="cartonbutton">
+                <i class="fa-solid fa-basket-shopping"></i>
+						<div class="content-shopping-cart">
+						</div>Carrito (0)</button>
             <div id="cartondropdown" class="hidden">
                 <h2>Carrito de Compras</h2>
                 <ul id="cartonlist">
@@ -25,8 +28,8 @@
         </div>
     </header>
     <div class="container">
-        <div id="search-bar">
-            <input type="text" id="search" placeholder="Buscar por nombre">
+        <div id="buscar-bar">
+            <input type="text" id="buscar" placeholder="Buscar por nombre">
             <select id="sort">
                 <option value="name-asc">Ordenar por nombre (A-Z)</option>
                 <option value="name-desc">Ordenar por nombre (Z-A)</option>
@@ -41,7 +44,10 @@
         <div id="carton-list">
         </div>
     </div>
-
+    <script src="https://kit.fontawesome.com/81581fb069.js"
+    crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
 </body>
+</html>
+
 </html>
