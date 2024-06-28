@@ -8,31 +8,52 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="container-navbar heading-1">
-        <div class="container-hero">
-            <div class="container hero">
-                <div class="customer-support">
-                    <i class="fa-solid fa-headset"></i>
-                    <div class="content-customer-support">
-                        <span class="text">Soporte al cliente</span>
-                        <span class="number">123-456-7890</span>
-                    </div>
-                </div>
+</head>
+<body>
+    <header>
+			<div class="container-hero">
+				<div class="container hero">
+					<div class="customer-support">
+						<i class="fa-solid fa-headset"></i>
+						<div class="content-customer-support">
+							<span class="text">Soporte al cliente</span>
+							<span class="number">123-456-7890</span>
+						</div>
+					</div>
 
-                <div class="container-logo">
-                    <i class="fa-solid fa-puzzle-piece"></i>
-                    <h1 class="logo"><a href="/">SamaTcg</a></h1>
-                </div>
+					<div class="container-logo">
+						<i class="fa-solid fa-puzzle-piece"></i>
+						<h1 class="logo"><a href="/">SamaTcg</a></h1>
+					</div>
 
-                <div class="container-user">
-                    <a href="./login.html"><i class="fa-solid fa-user"></i></a>
-                    <i class="fa-solid fa-basket-shopping"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="cartoncontainer">
-            <button id="cartonbutton">Carrito (0)</button>
+					<div class="container-user">
+						<a href="./login.html"><i class="fa-solid fa-user"></i></a>
+                        <div id="cartoncontainer">
+            <button id="cartonbutton">
+                <i class="fa-solid fa-basket-shopping"></i>
+						<div class="content-shopping-cart">
+						</div></button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-navbar">
+				<nav class="navbar container">
+					<i class="fa-solid fa-bars"></i>
+					<ul class="menu">
+						<li><a href="#">Inicio</a></li>
+						<li><a href="./cartas.html">Cartas</a></li>
+						<li><a href="#">Accesorios</a></li>
+						<li><a href="">Mas</a></li>
+						<li><a href="https://pbs.twimg.com/media/FjvLTgvX0AE7BVy?format=jpg&name=small">Sobre Sama</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+        
             <div id="cartondropdown" class="hidden">
                 <h2>Carrito de Compras</h2>
                 <ul id="cartonlist">
@@ -46,8 +67,8 @@
         </div>
     </header>
     <div class="container">
-        <div id="search-bar">
-            <input type="text" id="search" placeholder="Buscar por nombre">
+        <div id="buscar-bar">
+            <input type="text" id="buscar" placeholder="Buscar por nombre">
             <select id="sort">
                 <option value="name-asc">Ordenar por nombre (A-Z)</option>
                 <option value="name-desc">Ordenar por nombre (Z-A)</option>
@@ -62,8 +83,7 @@
         <div id="carton-list">
         </div>
     </div>
-
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
-    <script src="https://kit.fontawesome.com/81581fb069.js"></script>
 </body>
 </html>
