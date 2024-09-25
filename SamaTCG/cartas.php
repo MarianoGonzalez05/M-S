@@ -111,11 +111,31 @@ $resultado = $sql->fetchALL(PDO::FETCH_ASSOC);
 
 		<!-- intento -->
 		<div class="cuerpo">
-            <div class="col">
-            <div class="yugioh-container" id="yugioh-card-container">
-				<div class="card shadow-sm">
-					<img src="img/productos/singles/0/principal.jpg" height="300px">   
-					
+			<div class="yugioh-container" id="yugioh-card-container">
+				<!-- Ejemplo de carta -->
+				<div class="yugioh-card">
+					<img src="img/garunix.jpg" alt="Sagrado Rey de Fuego Garunix">
+					<h3>Sagrado Rey de Fuego Garunix</h3>
+					<p>$9.12</p>
+					<button>Añadir al carrito</button>
+				</div>
+
+				<div class="yugioh-card">
+					<img src="img/doomking.jpg" alt="Doomking Balerdroch">
+					<h3>Doomking Balerdroch</h3>
+					<p>$11.9</p>
+					<button>Añadir al carrito</button>
+				</div>
+
+				<div class="yugioh-card">
+					<img src="img/dino.jpg" alt="Ultimate Conductor Tyranno">
+					<h3>Ultimate Conductor Tyranno</h3>
+					<p>$4.20</p>
+					<button>Añadir al carrito</button>
+				</div>
+		
+			</div>
+		</div>
             </div>     
 			<!-- <button id="load-more" style=" 
 			background-color: #000000;
@@ -215,79 +235,5 @@ $resultado = $sql->fetchALL(PDO::FETCH_ASSOC);
 			src="https://kit.fontawesome.com/81581fb069.js"
 			crossorigin="anonymous"
 		></script>
-
-		<script>
-			// let cartasCargadas = 0;
-			// let cartasEnCarrito = [];
-			// let total = 0;
-			// const container = document.getElementById('yugioh-card-container');
-	
-			// async function fetchCartasYugioh(offset = 0, query = '') {
-			// 	try {
-			// 		let url = `https://db.ygoprodeck.com/api/v7/cardinfo.php?num=10&offset=${offset}`;
-			// 		if (query) {
-			// 			url = `https://db.ygoprodeck.com/api/v7/cardinfo.php?fname=${encodeURIComponent(query)}&num=10&offset=${offset}`;
-			// 		}
-			// 		const response = await fetch(url);
-			// 		const data = await response.json();
-			// 		mostrarCartas(data.data);
-			// 	} catch (error) {
-			// 		console.error('Error al obtener las cartas:', error);
-			// 	}
-			// }
-	
-			// function mostrarCartas(cartas) {
-			// 	cartas.forEach(carta => {
-			// 		const nombre = carta.name;
-			// 		const imagen = carta.card_images[0].image_url;
-			// 		const precio = parseFloat(carta.card_prices[0].cardmarket_price) || 0;
-	
-			// 		const cardDiv = document.createElement('div');
-			// 		cardDiv.className = 'yugioh-card';
-	
-			// 		const img = document.createElement('img');
-			// 		img.src = imagen;
-			// 		img.alt = nombre;
-	
-			// 		const h3 = document.createElement('h3');
-			// 		h3.textContent = nombre;
-	
-			// 		const p = document.createElement('p');
-			// 		p.textContent = `$${precio.toFixed(2)}`;
-	
-			// 		const button = document.createElement('button');
-			// 		button.textContent = 'Agregar al carrito';
-			// 		button.onclick = () => agregarAlCarrito(carta.id, nombre, precio);
-	
-			// 		cardDiv.appendChild(img);
-			// 		cardDiv.appendChild(h3);
-			// 		cardDiv.appendChild(p);
-			// 		cardDiv.appendChild(button);
-	
-			// 		container.appendChild(cardDiv);
-			// 	});
-			// }
-	
-			
-			// function buscarCartas() {
-			// 	const query = document.getElementById('search-input').value.trim();
-			// 	container.innerHTML = ''; // Limpiar el contenedor
-			// 	cartasCargadas = 0; // Reiniciar el contador de cartas
-			// 	if (query) {
-			// 		fetchCartasYugioh(0, query);
-			// 	} else {
-			// 		fetchCartasYugioh();
-			// 	}
-			// }
-	
-			// function cargarMasCartas() {
-			// 	cartasCargadas += 10;
-			// 	const query = document.getElementById('search-input').value.trim();
-			// 	fetchCartasYugioh(cartasCargadas, query);
-			// }
-	
-			// // Cargar las primeras 10 cartas al cargar la página
-			// fetchCartasYugioh();
-		</script>
 	</body>
 </html>
