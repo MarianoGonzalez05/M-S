@@ -12,16 +12,15 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Datos del usuario
-$user_username = "new_user";
-$user_email = "user@example.com";
-$user_password = password_hash("user_password", PASSWORD_DEFAULT);
+// Datos actualizados del usuario
+$user_id = 1;
+$new_username = "updated_user";
+$new_email = "updated_user@example.com";
 
-// Insertar usuario
-$sql = "INSERT INTO users (username, email, password) VALUES ('$user_username', '$user_email', '$user_password')";
+$sql = "UPDATE users SET username='$new_username', email='$new_email' WHERE id=$user_id";
 
 if ($conn->query($sql) === TRUE) {
-    echo "New user created successfully";
+    echo "User updated successfully";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

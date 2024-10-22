@@ -12,16 +12,13 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Datos del usuario
-$user_username = "new_user";
-$user_email = "user@example.com";
-$user_password = password_hash("user_password", PASSWORD_DEFAULT);
+// ID del usuario a eliminar
+$user_id = 1;
 
-// Insertar usuario
-$sql = "INSERT INTO users (username, email, password) VALUES ('$user_username', '$user_email', '$user_password')";
+$sql = "DELETE FROM users WHERE id=$user_id";
 
 if ($conn->query($sql) === TRUE) {
-    echo "New user created successfully";
+    echo "User deleted successfully";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
