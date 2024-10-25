@@ -4,7 +4,7 @@ require 'SamaDB/database.php';
 $db = new Database();
 $con = $db->conectar();
 
-$sql = $con->prepare("SELECT id_singles, nombre FROM singles WHERE activo=1");
+$sql = $con->prepare("SELECT id_singles, nombre, precio FROM singles WHERE activo>=1");
 $sql->execute();
 $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -150,7 +150,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 
 <!-- Cartas -->
 <div class="yugioh-container" id="yugioh-card-container">
-    <?php foreach ($resultado as $row) { $id = $row['id_singles']; ?>
+    <?php foreach ($resultado as $row) { $id = $row['id_singles']; $precio = number_format($row['precio'], 2, '.', ''); ?>
     <div class="yugioh-card">
         <a href="detalles.php?id=<?php echo $id; ?>&token=<?php echo hash_hmac('sha1', $id, KEY_TOKEN); ?>">
             <?php 
@@ -163,8 +163,8 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
             <img src="<?php echo $imagen; ?>" alt="Carta" />
         </a>
         <h3><?php echo $row['nombre']; ?></h3>
-        <p>$9.12</p>
-        <button onclick="agregarAlCarrito(<?php echo $id; ?>, '<?php echo $row['nombre']; ?>', 9.12)">Añadir al carrito</button>
+        <p>$<?php echo $precio; ?></p>
+        <button onclick="agregarAlCarrito(<?php echo $id; ?>, '<?php echo $row['nombre']; ?>', <?php echo $precio; ?>)">Añadir al carrito</button>
     </div>
     <?php } ?>
 </div>
