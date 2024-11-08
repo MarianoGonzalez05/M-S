@@ -1,0 +1,138 @@
+#cartoncontainer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+#cartonbutton {
+    background-color: #fff;
+    color: #333; 
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+#cartonbutton:hover {
+    background-color: #f1f1f1;
+}
+#cartondropdown {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: #333; 
+}
+#cartondropdown h2 {
+    margin-top: 0;
+}
+.hidden {
+    display: none;
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+#search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#search-bar input, #search-bar select {
+    padding: 10px;
+    margin: 5px;
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+#search-bar input:focus, #search-bar select:focus {
+    border-color: #1e90ff;
+}
+#carton-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+.carton {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.carton:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+.carton img {
+    max-width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+.carton h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #1e90ff;
+}
+.carton p {
+    margin: 10px 0;
+}
+.carton button {
+    padding: 10px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.carton button:hover {
+    background-color: #1c86ee;
+}
+#cartonlist {
+    list-style: none;
+    padding: 0;
+}
+#cartonlist li {
+    margin-bottom: 10px;
+}
+#cartonbuttons {
+    margin-top: 20px;
+}
+#cartonbuttons button {
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+#cartonbuttons button:hover {
+    background-color: #d32f2f;
+}
+.remove-item {
+    margin-left: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.remove-item:hover {
+    background-color: #d32f2f;
+}
+
