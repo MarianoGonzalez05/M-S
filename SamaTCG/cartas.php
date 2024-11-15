@@ -138,12 +138,11 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 						<li><a href="Sobresama/sobresama.html">Sobre Sama</a></li>
 					</ul>
 
-					<form class="search-form">
-						<input type="search" placeholder="Buscar..." />
-						<button class="btn-search">
-							<i class="fa-solid fa-magnifying-glass"></i>
-						</button>
-					</form>
+					<form class="search-form" onsubmit="event.preventDefault(); realizarBusqueda();">
+                        <input type="text" id="buscar" placeholder="Escribe el nombre de una carta...">
+                        <button class="btn-search" type="button" onclick="realizarBusqueda()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <div id="resultados" class="result"></div>
+                    </form>
 				</nav>
 			</div>
 		</header>
@@ -332,5 +331,23 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 </script>
 
 <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+
+<script>
+        // Función para realizar la búsqueda
+function realizarBusqueda() {
+    const busqueda = document.getElementById('buscar').value.toLowerCase(); // Obtiene el texto de búsqueda en minúsculas
+    const cartas = document.querySelectorAll('.yugioh-card'); // Selecciona todas las cartas
+    
+    cartas.forEach(carta => {
+        const nombreCarta = carta.querySelector('h3').textContent.toLowerCase(); // Obtiene el nombre de la carta en minúsculas
+        
+        if (nombreCarta.includes(busqueda)) { 
+            carta.style.display = 'block'; // Muestra la carta si coincide con la búsqueda
+        } else {
+            carta.style.display = 'none'; // Oculta la carta si no coincide
+        }
+    });
+}
+    </script>
 </body>
 </html>
