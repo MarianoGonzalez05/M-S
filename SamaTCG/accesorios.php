@@ -93,6 +93,11 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
             padding: 10px;
             border-radius: 5px;
         }
+        .mensaje-sin-resultados {
+            text-align: center;
+            font-size: 45px;
+            margin: 250px 0;
+        }
     </style>
 </head>
 <body>
@@ -149,25 +154,29 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 
 <!-- Cartas -->
 <div class="yugioh-container" id="yugioh-card-container">
-    <?php foreach ($resultado as $row) { $id = $row['id_accesorios']; $precio = number_format($row['precio'], 2, '.', ''); ?>
-    <div class="yugioh-card">
-        <a href="detallesA.php?id=<?php echo $id; ?>&token=<?php echo hash_hmac('sha1', $id, KEY_TOKEN); ?>">
-            <?php 
-            $id = $row['id_accesorios'];
-            $imagen = "img/productos/accesorios/" . $id . "/accesorio.jpg";
-            if (!file_exists($imagen)) {
-                $imagen = "img/productos/accesorios/no-photo.jpg";
-            }
-            ?>
-            <img src="<?php echo $imagen; ?>" alt="Carta" />
-        </a>
-        <h3><?php echo $row['nombre']; ?></h3>
-        <p>$<?php echo $precio; ?></p>
-        <button onclick="agregarAlCarrito(<?php echo $id; ?>, '<?php echo $row['nombre']; ?>', <?php echo $precio; ?>)">Añadir al carrito</button>
-    </div>
-    <?php } ?>
+    <?php if (empty($resultado)) { ?>
+        <p class="mensaje-sin-resultados">No se encontraron resultados.</p>
+    <?php } else { 
+        foreach ($resultado as $row) {
+            $id = $row['id_accesorios']; 
+            $precio = number_format($row['precio'], 2, '.', ''); ?>
+            <div class="yugioh-card">
+                <a href="detallesA.php?id=<?php echo $id; ?>&token=<?php echo hash_hmac('sha1', $id, KEY_TOKEN); ?>">
+                    <?php 
+                    $imagen = "img/productos/accesorios/" . $id . "/accesorio.jpg";
+                    if (!file_exists($imagen)) {
+                        $imagen = "img/productos/accesorios/no-photo.jpg";
+                    }
+                    ?>
+                    <img src="<?php echo $imagen; ?>" alt="Carta" />
+                </a>
+                <h3><?php echo $row['nombre']; ?></h3>
+                <p>$<?php echo $precio; ?></p>
+                <button onclick="agregarAlCarrito(<?php echo $id; ?>, '<?php echo $row['nombre']; ?>', <?php echo $precio; ?>)">Añadir al carrito</button>
+            </div>
+        <?php } 
+    } ?>
 </div>
-
 
 <!-- Modal del carrito -->
 <div class="modal" id="carrito-modal">
@@ -333,20 +342,36 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
 
 <script>
-        // Función para realizar la búsqueda
 function realizarBusqueda() {
-    const busqueda = document.getElementById('buscar').value.toLowerCase(); // Obtiene el texto de búsqueda en minúsculas
-    const cartas = document.querySelectorAll('.yugioh-card'); // Selecciona todas las cartas
-    
+    const busqueda = document.getElementById('buscar').value.toLowerCase();
+    const cartas = document.querySelectorAll('.yugioh-card');
+    let resultados = 0;
+
     cartas.forEach(carta => {
-        const nombreCarta = carta.querySelector('h3').textContent.toLowerCase(); // Obtiene el nombre de la carta en minúsculas
-        
-        if (nombreCarta.includes(busqueda)) { 
-            carta.style.display = 'block'; // Muestra la carta si coincide con la búsqueda
+        const nombreCarta = carta.querySelector('h3').textContent.toLowerCase();
+        if (nombreCarta.includes(busqueda)) {
+            carta.style.display = 'block';
+            resultados++;
         } else {
-            carta.style.display = 'none'; // Oculta la carta si no coincide
+            carta.style.display = 'none';
         }
     });
+
+    const contenedor = document.getElementById('yugioh-card-container');
+    if (resultados === 0) {
+        if (!document.getElementById('mensaje-sin-resultados')) {
+            const mensaje = document.createElement('p');
+            mensaje.id = 'mensaje-sin-resultados';
+            mensaje.className = 'mensaje-sin-resultados';
+            mensaje.textContent = 'No se encontraron resultados.';
+            contenedor.appendChild(mensaje);
+        }
+    } else {
+        const mensaje = document.getElementById('mensaje-sin-resultados');
+        if (mensaje) {
+            mensaje.remove();
+        }
+    }
 }
 </script>
 </body>
