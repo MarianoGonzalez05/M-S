@@ -3,7 +3,7 @@
 <br>
 <br>
 
-<img src="SamaTCG/img/titulo.png">
+![Logo de mi proyecto](SamaTCG/img/titulo.png)
 
 "Sama" Es un vendedor de cartas de la saga de Konami Yu-Gi-Oh!, y nos pidió crear una pagina para poder vender sus cartas, ya que la que estaba usando contaba con algunas carencias
 <br>
