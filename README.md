@@ -37,10 +37,10 @@ Cómo navegar desde la página principal:
 ![imagen](img/cartas.png)
 
 <h5>Sección de structure</h5>  
-![Logo de mi proyecto](img/structure.png)
+![structureimagen](img/structure.png)
 
 <h5>Sección de accesorios</h5>  
-![Logo de mi proyecto](img/accesorios.png)
+![Accesoriosimagen](img/accesorios.png)
 
 
 >    - Chamorro Santiago
