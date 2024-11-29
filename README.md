@@ -10,6 +10,10 @@ Nosotros a través de este medio presentamos Samatcg, un proyecto que desarroll�
 <li>Que los usuarios puedan navegar de forma amigable por el sistema</li>
 <li>También pueden realizar compras de los productos que quieran.</li>
 </ul>	
+
+Samatcg es una plataforma de comercio electrónico especializada en la compra y venta de cartas de Yu-Gi-Oh!. Desarrollada a medida para el dueño del sistema, Sama, la plataforma tiene como objetivo ofrecer una solución integral que permita gestionar su inventario de productos, facilitar las compras a los usuarios y optimizar el proceso de venta. ¿Cómo lo hicimos ? Utilizando tecnologías como HTML, CSS, PHP y JavaScript, Samatcg no solo cumple con los requisitos iniciales del cliente, sino que también incluye funcionalidades adicionales para mejorar la experiencia de compra.
+
+
 El objetivo principal de Samatcg es simplificar y agilizar el proceso de compra y venta de cartas coleccionables, eliminando la necesidad de que los compradores interactúen manualmente con cada vendedor o se desplacen físicamente a realizar sus compras. Ahora, con nuestra plataforma, los usuarios pueden realizar sus transacciones de manera digital y segura, mientras que los vendedores pueden enfocarse únicamente en gestionar su inventario y coordinar los envíos, sin tener que preocuparse por los aspectos logísticos de la venta.
 Para nosotros, el futuro de Samatcg va más allá de ser una simple plataforma de comercio electrónico. Nuestra visión es expandir la comunidad de Samatcg, creando un espacio donde los usuarios no solo compren y vendan cartas, sino también intercambien experiencias, conocimientos y pasiones relacionadas con el mundo de Yu-Gi-Oh!. Creemos que, con el tiempo, Samatcg puede convertirse en el referente global para todos los entusiastas de las cartas coleccionables, brindando un servicio de calidad y accesibilidad a nivel internacional.
 
