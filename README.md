@@ -65,9 +65,9 @@ luego de iniciar sesion sama vera el siguiente apartado:
 ![fondon](img/bailanlasrochas.png)
 donde saldra enlistado todos sus productos y podra filtrar buscando uno en particular ademas usando los botones podra gestionar su inventario, como borrandolo o editandolo
 
-![Logo de mi proyecto](img/_editar.png)
-![Logo de mi proyecto](img/_crear.png)
-![Logo de mi proyecto](img/_borrar.png)
+![Logo de mi proyecto](img/editar.png)
+![Logo de mi proyecto](img/crear.png)
+![Logo de mi proyecto](img/borrar.png)
 
 asi Sama podra gestionar sus productos con el dasboard 
 
