@@ -34,13 +34,13 @@ Cómo navegar desde la página principal:
 <ul>Accede al menú para visitar las diferentes secciones: Cartas, Accesorios o Estructuras.</ul>
 <br> <br> <br>
 <h5>Seccion de cartas</h5> 
-![Logo de mi proyecto](img/cartas.png)
+![Logo de mi proyecto].(img/cartas.png)
 
 <h5>Seccion de structure</h5> 
-![Logo de mi proyecto](img/structure.png)
+![Logo de mi proyecto].(img/structure.png)
 
 <h5>Seccion de accesorios</h5> 
-![Logo de mi proyecto](img/accesorios.png)
+![Logo de mi proyecto].(img/accesorios.png)
 
 
 >    - Chamorro Santiago
