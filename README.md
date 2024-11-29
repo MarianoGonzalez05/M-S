@@ -39,9 +39,11 @@ Cómo navegar desde la página principal:
 ![imagen](img/cartas.png)
 
 <h5>Sección de structure</h5>  
+
 ![structureimagen](img/structure.png)
 
 <h5>Sección de accesorios</h5>  
+
 ![Accesoriosimagen](img/accesorios.png)
 
 
