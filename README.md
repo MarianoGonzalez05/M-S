@@ -27,6 +27,7 @@ La página principal es el lugar donde comienza la experiencia en SamaTCG.
 <li>Explorar productos destacados: Una selección de artículos populares o nuevos.</li>
 <li>Acceder al menú principal: Ubicado en la parte superior, te permitirá navegar fácilmente por todas las secciones de la tienda.</li>
 
+![Logo de mi proyecto](img/barra.png)
 
 >    - Chamorro Santiago
 >    - Diaz Agustin
