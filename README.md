@@ -49,6 +49,7 @@ Cómo navegar desde la página principal:
 
 
 en las 3 secciones se pueden ver todos los productos que tenga SamaTCG ofreciendo, al hacer click en ellos mostrara una mayor descripcion del mismo:
+![descriimagen](img/descri.png)
 
 
 >    - Chamorro Santiago
