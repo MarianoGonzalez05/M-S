@@ -29,6 +29,10 @@ La página principal es el lugar donde comienza la experiencia en SamaTCG.
 
 ![Logo de mi proyecto](img/barra.png)
 
+Cómo navegar desde la página principal:
+<ul>Mira los productos destacados para descubrir opciones recomendadas.</ul>
+<ul>Accede al menú para visitar las diferentes secciones: Cartas, Accesorios o Estructuras.</ul>
+
 >    - Chamorro Santiago
 >    - Diaz Agustin
 >    - Gonzalez Mariano 
