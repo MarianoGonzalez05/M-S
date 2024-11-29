@@ -47,6 +47,10 @@ Cómo navegar desde la página principal:
 ![Accesoriosimagen](img/accesorios.png)
 
 
+
+en las 3 secciones se pueden ver todos los productos que tenga SamaTCG ofreciendo, al hacer click en ellos mostrara una mayor descripcion del mismo:
+
+
 >    - Chamorro Santiago
 >    - Diaz Agustin
 >    - Gonzalez Mariano 
