@@ -21,6 +21,12 @@ Para nosotros, el futuro de Samatcg va más allá de ser una simple plataforma d
 
 ![Logo de mi proyecto](img/_titulo.png)
 
+
+¿Qué encontrarás aquí?
+La página principal es el lugar donde comienza la experiencia en SamaTCG.
+<li>Explorar productos destacados: Una selección de artículos populares o nuevos.</li>
+<li>Acceder al menú principal: Ubicado en la parte superior, te permitirá navegar fácilmente por todas las secciones de la tienda.</li>
+
 "Sama" Es un vendedor de cartas de la saga de Konami Yu-Gi-Oh!, y nos pidió crear una pagina para poder vender sus cartas, ya que la que estaba usando contaba con algunas carencias
 <br>
 <br>
