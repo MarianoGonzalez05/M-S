@@ -3,7 +3,7 @@
 <br>
 <br>
 
-![banner](https://i.pinimg.com/originals/21/11/61/21116158daaeb1459b4ec0758505e1ad.gif)
+![banner](SamaTCG/img/titulo.png)
 
 "Sama" Es un vendedor de cartas de la saga de Konami Yu-Gi-Oh!, y nos pidió crear una pagina para poder vender sus cartas, ya que la que estaba usando contaba con algunas carencias
 <br>
