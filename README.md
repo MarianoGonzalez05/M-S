@@ -56,7 +56,8 @@ ademas de eso los usuarios pueden sumar productos a sus carritos, pueden tener v
 
 ![imagen](img/carrito.png)
 
-Ademas para Sama realizamos un apartado donde puede editar, subir, bajar y ver sus productos.
+Ademas para Sama realizamos un apartado donde puede editar, subir, bajar y ver sus productos. dandole esta URL a la que el solo tiene acceso, le pedira que inicie seion y nosotros le otorgaremos una cuenta personal
+en ella Sama podra iniciar sesion y tendra acceso a un apartado donde podra gestionar sus productos. 
 
 ![fondon](img/loginadmin.png)
 
