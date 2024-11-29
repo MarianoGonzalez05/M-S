@@ -28,7 +28,8 @@ La página principal es el lugar donde comienza la experiencia en SamaTCG.
 <li>Acceder al menú principal: Ubicado en la parte superior, te permitirá navegar fácilmente por todas las secciones de la tienda.</li>
 
 ![Logo de mi proyecto](img/barra.png)
-
+![structureimagen](img/structure.png)
+![Accesoriosimagen](img/accesorios.png)
 Cómo navegar desde la página principal:
 <ul>Mira los productos destacados para descubrir opciones recomendadas.</ul>
 <ul>Accede al menú para visitar las diferentes secciones: Cartas, Accesorios o Estructuras.</ul>
@@ -38,10 +39,10 @@ Cómo navegar desde la página principal:
 ![imagen](img/cartas.png)
 
 <h5>Sección de structure</h5>  
-![structureimagen](img/structure.png)
+
 
 <h5>Sección de accesorios</h5>  
-![Accesoriosimagen](img/accesorios.png)
+
 
 
 >    - Chamorro Santiago
