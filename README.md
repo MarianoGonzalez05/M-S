@@ -63,6 +63,7 @@ en ella Sama podra iniciar sesion y tendra acceso a un apartado donde podra gest
 
 luego de iniciar sesion sama vera el siguiente apartado:
 ![fondon](img/bailanlasrochas.png)
+donde usando los botones podra gestionar su inventario, como borrandolo o editandolo
 
 
 
