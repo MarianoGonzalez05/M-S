@@ -56,7 +56,9 @@ ademas de eso los usuarios pueden sumar productos a sus carritos, pueden tener v
 
 ![imagen](img/carrito.png)
 
+Ademas para Sama realizamos un apartado donde puede editar, subir, bajar y ver sus productos.
 
+![descriimagen](img/.png)
 
 
 >    - Chamorro Santiago
