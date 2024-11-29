@@ -33,9 +33,9 @@ Cómo navegar desde la página principal:
 <ul>Mira los productos destacados para descubrir opciones recomendadas.</ul>
 <ul>Accede al menú para visitar las diferentes secciones: Cartas, Accesorios o Estructuras.</ul>
 <br> 
-![imagen](img/cartas.png)
 <h5>Sección de cartas</h5>  
 
+![imagen](img/cartas.png)
 
 <h5>Sección de structure</h5>  
 ![structureimagen](img/structure.png)
