@@ -32,7 +32,7 @@ La página principal es el lugar donde comienza la experiencia en SamaTCG.
 Cómo navegar desde la página principal:
 <ul>Mira los productos destacados para descubrir opciones recomendadas.</ul>
 <ul>Accede al menú para visitar las diferentes secciones: Cartas, Accesorios o Estructuras.</ul>
-<br> <br> <br>
+<br> 
 <h5>Sección de cartas</h5>  
 ![imagen](img/cartas.png)
 
