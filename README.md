@@ -33,14 +33,14 @@ Cómo navegar desde la página principal:
 <ul>Mira los productos destacados para descubrir opciones recomendadas.</ul>
 <ul>Accede al menú para visitar las diferentes secciones: Cartas, Accesorios o Estructuras.</ul>
 <br> <br> <br>
-<h5>Seccion de cartas</h5> 
+<h5>Sección de cartas</h5>  
 ![imagen](img/cartas.png)
 
-<h5>Seccion de structure</h5> 
-![Logo de mi proyecto].(img/structure.png)
+<h5>Sección de structure</h5>  
+![Logo de mi proyecto](img/structure.png)
 
-<h5>Seccion de accesorios</h5> 
-![Logo de mi proyecto].(img/accesorios.png)
+<h5>Sección de accesorios</h5>  
+![Logo de mi proyecto](img/accesorios.png)
 
 
 >    - Chamorro Santiago
