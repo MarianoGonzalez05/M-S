@@ -52,9 +52,11 @@ en las 3 secciones se pueden ver todos los productos que tenga SamaTCG ofreciend
 ![descriimagen](img/descri.png)
 
 
-ademas de eso los usuarios pueden sumar productos a sus carritos, pueden tener varios productos al mismo tiempo. Solo tienen que sumar varios productos al carrito y en el logo de carrito hacer click  y se mostrara asi:
+ademas de eso los usuarios pueden sumar productos a sus carritos, pueden tener varios productos al mismo tiempo. Solo tienen que sumar varios productos al carrito y en el logo de carrito hacer click  y se mostrara asi donde se podra realizar la compra:
 
 ![imagen](img/carrito.png)
+
+
 
 
 >    - Chamorro Santiago
