@@ -61,6 +61,9 @@ en ella Sama podra iniciar sesion y tendra acceso a un apartado donde podra gest
 
 ![fondon](img/loginadmin.png)
 
+luego de iniciar sesion sama vera el siguiente apartado:
+
+
 
 >    - Chamorro Santiago
 >    - Diaz Agustin
